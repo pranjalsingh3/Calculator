@@ -1,0 +1,9 @@
+{
+    "name": "calculator",
+    "description": "microservice calculator using API",
+    "dependencies": {
+        "express": "^4.18.3"
+    },
+    "author": "Pranjal Singh",
+    "license": "MIT"
+}
