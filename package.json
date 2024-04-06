@@ -1,0 +1,19 @@
+{
+  "name": "microservice",
+  "version": "1.0.0",
+  "description": "Calculator microservice",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranjalsingh3/Calculator.git"
+  },
+  "author": "Pranjal Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranjalsingh3/Calculator/issues"
+  },
+  "homepage": "https://github.com/pranjalsingh3/Calculator#readme"
+}
