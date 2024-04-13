@@ -44,6 +44,33 @@ app.get('/divide', (req, res) => {
     res.json({ result });
 });
 
+// app.get('/power', (req, res) => {
+//     const { num1, num2 } = req.query;
+//     if (!isValidNumber(num1) || !isValidNumber(num2)) {
+//         return res.status(400).json({ error: 'Parameters must be valid numbers' });
+//     }
+//     const result = Math.pow(parseFloat(num1), parseFloat(num2));
+//     res.json({ result });
+// });
+
+// app.get('/root', (req, res) => {
+//     const { num1, num2 } = req.query;
+//     if (!isValidNumber(num1) || !isValidNumber(num2) || parseFloat(num2) === 0) {
+//         return res.status(400).json({ error: 'Parameters must be valid numbers and root must be non-zero' });
+//     }
+//     const result = Math.pow(parseFloat(num1), (1 / parseFloat(num2)));
+//     res.json({ result });
+// });
+
+// app.get('/modulo', (req, res) => {
+//     const { num1, num2 } = req.query;
+//     if (!isValidNumber(num1) || !isValidNumber(num2) || parseFloat(num2) === 0) {
+//         return res.status(400).json({ error: 'Parameters must be valid numbers and modulus must be non-zero' });
+//     }
+//     const result = (parseFloat(num1) % parseFloat(num2));
+//     res.json({ result });
+// });
+
 // Helper function to check if input is a valid number
 function isValid(value) {
     return !isNaN(parseFloat(value)) && isFinite(value);

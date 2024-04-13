@@ -21,6 +21,9 @@
             <option value="subtract">Subtraction (-)</option>
             <option value="multiply">Multiplication (*)</option>
             <option value="divide">Division (/)</option>
+            <!-- <option value="power">Power (num1 ^ num2)</option> -->
+            <!-- <option value="root">Root (num2√num1)</option> -->
+            <!-- <option value="modulo">Modulo (num1 % num2)</option> -->
         </select><br><br>
 
         <button type="button" onclick="performOperation()">Calculate</button>
@@ -36,6 +39,11 @@
 
             if (operation === 'divide' && parseFloat(num2) === 0) {
                 document.getElementById('result').textContent = 'Error: Cannot divide by zero';
+                return;
+            };
+
+            if (!num1 || !num2) {
+                document.getElementById('result').textContent = 'Error: Please enter both numbers';
                 return;
             }
 
