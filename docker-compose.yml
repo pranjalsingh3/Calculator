@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  calculator:
+    image: calculator-app
+    ports:
+      - "3040:3040"
+    environment:
+      - NODE_ENV=production
