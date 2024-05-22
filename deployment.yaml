@@ -17,3 +17,6 @@ spec:
           image: pranjalsin/calculator-app:v1  # Docker image name and version
           ports:
             - containerPort: 3040  # Port your Node.js app listens on
+          env:
+            - name: MONGO_URL
+              value: "mongodb+srv://admin:password1234@cluster.3uxvwkt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster"
